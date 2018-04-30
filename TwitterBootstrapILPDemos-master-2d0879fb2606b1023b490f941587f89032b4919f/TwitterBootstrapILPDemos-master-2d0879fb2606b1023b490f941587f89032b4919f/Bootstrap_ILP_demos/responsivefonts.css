@@ -1,0 +1,16 @@
+/* Extra small devices (phones, up to 480px) */
+	@media screen and (max-width: 767px) {
+	body,pbody,p{font-size: 14px;}
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 939px) {
+body,p{font-size: 16px;}
+}
+/* tablets/desktops and up ----------- */
+@media (min-width: 940px) and (max-width: 1199px) {
+body,p{font-size: 20px;}
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+body,p{font-size: 22px;}
+}

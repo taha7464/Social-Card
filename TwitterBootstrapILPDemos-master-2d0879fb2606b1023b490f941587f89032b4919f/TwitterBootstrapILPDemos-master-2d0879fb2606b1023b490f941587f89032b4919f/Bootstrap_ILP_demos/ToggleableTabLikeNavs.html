@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css"/>  
+  <style>
+	body{
+		font-family:'Calibri';	
+		background-color: #F6F3F2;
+		font-size:18px;
+		
+	}
+	.gridbordergrey
+	{
+		border: 5px solid #F6F2F2;
+	}
+	#header {
+		height: 50px;
+		background: linear-gradient(to right,  orange, white , green);
+		box-shadow: 0 3px 5px 0 rgba(148,148,148,0.88);
+	 }
+	p{
+		font-size:18px;
+	}
+	.fullwidth
+	{
+		width:100%;	
+	}	
+	#imgGallery
+	{
+	width: 95%;
+    background: #fff;    
+	border: 5px solid red;
+    z-index: 10;
+    margin: 0 auto;
+	}
+	.whitebackground
+	{
+		background-color:white;
+	}
+	.whiteborder{
+		border: 5px solid white;
+	}
+	 .form-control:focus {
+        border-color: #ff80ff;
+        box-shadow: 0px 1px 1px orange inset, 0px 0px 8px green;
+    }
+  </style>
+
+  </head>
+  <body>
+
+<div class="fullwidth text-center" id="header">
+   <header style=" padding:4px; ">	
+	<h3 style="margin-top:10px; font-weight: 900">
+		Remarkable India 
+	</h3>	
+  </header>
+</div>
+
+<div class="container"><br>
+	<ul class="nav nav-tabs nav-justified">		
+		<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+		<li><a data-toggle="tab" href="#destinations">Destinations</a></li>
+		<li><a data-toggle="tab" href="#packages">Packages</a></li>
+	</ul>
+	<div class="tab-content">
+	  <div id="home" class="tab-pane fade in active">
+	  <br>
+			<img src="shutterstockimages/india.PNG" style="margin: 0 auto;" 
+			class="img img-responsive " />
+			<div class="container-fluid">
+			<p style="margin-top:20px; font-weight: 400; text-align:left;">
+				The Travel & Tourism Competitiveness Report 2015 ranks India 52nd out of 141
+					 countries overall. The report ranks the price competitiveness of India's tourism
+					 sector 8th out of 141 countries. It mentions that India has quite good air transport
+					 (ranked 35th), particularly given the country’s stage of development, and reasonable 
+					 ground transport infrastructure (ranked 50th). The country also scores high on natural 
+					 and cultural resources (ranked 12th).
+			</p>
+			</div>
+	  </div>
+	  <div id="destinations" class="tab-pane fade">
+	  <br>
+		<div class="container"> 
+		   <div class="row">
+			<div class="col-xs-6 aligncenter gridbordergrey whitebackground" >
+			<h3 class="text-center">Kerala</h3>
+				<img src="shutterstockimages/Kerala.PNG" class="img-responsive img-thumbnail"/>
+				
+				<div>
+				Kerala is situated on the southwestern tip of the Indian mainland on the Arabian Sea. 
+				According to the geographical features, the state can be divided into hills and valleys, 
+				midland plains and coastal belts.In the coastal belts of this state are situated world famous backwaters that are more or less main attraction of Kerala.
+				</div><br><br>
+			</div>
+			<div class="col-xs-6  gridbordergrey whitebackground">
+			<h3 class="text-center">Tamil Nadu</h3>
+				<img src="shutterstockimages/TNn.PNG"  class="img-responsive img-thumbnail"/>
+				
+				<div>The state boasts of a wide range of topological features. There are chains of mountains, the highest being the Mullayyana Giri (1,925m). Other than the mountains, there are plateaus, residual hills and coastal plains.
+				Located in south India, Tamil Nadu is bounded in the north by Andhra Pradesh and Karnataka, in the south by the Indian Ocean, 
+				in the east by the Bay of Bengal, and by Kerala in the west. 
+				
+				</div><br>
+			</div>
+			
+		</div>
+		</div>
+	  </div>
+	  <div id="packages" class="tab-pane fade">
+		 <br>
+		<div class="container"> 
+		   <div class="row">
+			<div class="col-xs-5 aligncenter gridbordergrey whitebackground" style="padding:10px">
+			<h3 class="text-center" >NORTH INDIA PACKAGE</h3>
+				<a href="shutterstockimages/376575871-Sikkim.PNG" class="thumbnail" style="padding:10px">
+				  <p>Sikkim</p> 
+				  <img src="shutterstockimages/376575871-Sikkim.jpg" >
+				</a>
+				<a href="shutterstockimages/421415146-Karnataka.jpg" class="thumbnail" style="padding:10px">
+				  <p>Karnataka</p> 
+				  <img src="shutterstockimages/421415146-Karnataka.jpg" >
+				</a>
+				
+			</div>
+			<div class="col-xs-5 col-xs-offset-2 gridbordergrey whitebackground" style="padding:10px">
+			<h3 class="text-center">SOUTH INDIA PACKAGE</h3>
+				<a href="shutterstockimages/107790089-Kerala.PNG" class="thumbnail" style="padding:10px">
+					  <p>Kerala</p> 
+					  <img src="shutterstockimages/107790089-Kerala.PNG" >
+					</a>
+					<a href="shutterstockimages/TNn.PNG" class="thumbnail" style="padding:10px">
+					  <p>Tamil Nadu</p> 
+					  <img src="shutterstockimages/TNn.PNG" >
+					</a>
+					
+				
+				</div><br>
+			</div>
+		
+		</div>
+		</div>
+	  </div>
+	</div>
+</div>
+<br><br><br>
+
+</body>
+</html>

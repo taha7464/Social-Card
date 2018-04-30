@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+	body{
+		font-family:'Calibri';	
+		//background-color: #F6F3F2;
+		font-size:18px;
+		
+	}
+	.gridbordergrey
+	{
+		border: 5px solid #F6F2F2;
+	}
+	#header {
+		height: 50px;
+		background: linear-gradient(to right,  orange, white , green);
+		box-shadow: 0 3px 5px 0 rgba(148,148,148,0.88);
+	 }
+	p{
+		font-size:18px;
+	}
+	.fullwidth
+	{
+		width:100%;	
+	}	
+	#imgGallery
+	{
+	width: 95%;
+    background: #fff;    
+	border: 5px solid red;
+    z-index: 10;
+    margin: 0 auto;
+	}
+	.whitebackground
+	{
+		background-color:white;
+	}
+	.whiteborder{
+		border: 5px solid white;
+	}
+	 .form-control:focus {
+        border-color: #ff80ff;
+        box-shadow: 0px 1px 1px orange inset, 0px 0px 8px green;
+    }
+  </style>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  </head>
+<body>
+<!--text-center-->
+<div class="fullwidth text-center" id="header" >
+   <header style=" padding:4px; ">	
+	<h3 style="margin-top:10px; font-weight: 900">
+		Remarkable India 
+	</h3>
+  </header>
+</div><br>
+<div class="container">
+<div class="col-sm-8 col-sm-offset-2">
+<div class="panel-group">
+<div class="panel panel-primary">
+		<div class="panel-heading"><h3>South India Package</h3></div>
+		<div class="panel-body">			
+			  <table class="table">
+					<thead>
+						<tr>
+							<th>Place</th>
+							<th>Package Duration</th>
+							<th>Cost</th>							
+						</tr>
+					</thead>
+				<tbody>
+					<tr>
+						<td>Kerala</td>
+						<td>4 days 3 nights</td>
+						<td>Rs.10000</td>
+					</tr>
+					<tr>
+						<td>Tamil Nadu</td>
+						<td>6 days 5 nights</td>
+						<td>Rs.20000</td>
+					</tr>
+					<tr>
+						<td>Karnataka</td>
+						<td>6 days 5 nights</td>
+						<td>Rs.18000</td>
+					</tr>
+				</tbody> 
+			</table>
+			</div>		
+		<div class="panel-footer ">
+			<button >Book</button> &nbsp;&nbsp;
+			<button >View Details</button> &nbsp;&nbsp;
+		</div>		
+</div>
+
+<div class="panel panel-success">
+		<div class="panel-heading"><h3>North India Package</h3></div>
+		<div class="panel-body">			
+			  <ul>
+				<li>Uttarakhand package</li>
+				<li>Manali Package</li>
+				<li>Chandigarh Package</li>
+			  </ul>
+		</div>		
+		<div class="panel-footer">
+			<button >Book</button> &nbsp;&nbsp;
+			<button >View Details</button> &nbsp;&nbsp;
+		</div>		
+</div>
+</div>
+</div>
+</div>
+
+</body>
+
+</html>	

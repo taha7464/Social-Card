@@ -1,0 +1,30 @@
+     @media screen and (min-width:800px) and (max-width:1200px) {
+      body {
+       	background:gray;
+    	   }
+      img{
+        height:200px;
+        width:200px;
+         } 
+         }
+	 @media screen and (min-width:620px) and (max-width:799px){
+      body
+   	    {
+   	    background:yellow;
+   	    }
+      img{
+        height:100px;
+        width:200px;      
+        } 
+        }
+   	 @media screen and (min-width:320px) and (max-width:619px){
+   	  body
+   	    {
+   	    background:white;
+   	    }
+   	  img{
+        height:200px;
+        width:200px;    
+         }
+         }
+	

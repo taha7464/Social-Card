@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css"/> 
+  <style>
+	body{
+		font-family:'Calibri';	
+		background-color: #F6F3F2;
+		font-size:18px;
+		
+	}
+	.gridbordergrey
+	{
+		border: 5px solid #F6F2F2;
+	}
+	#header {
+		height: 50px;
+		background: linear-gradient(to right,  orange, white , green);
+		box-shadow: 0 3px 5px 0 rgba(148,148,148,0.88);
+	 }
+	p{
+		font-size:18px;
+	}
+	.fullwidth
+	{
+		width:100%;	
+	}	
+	#imgGallery
+	{
+	width: 95%;
+    background: #fff;    
+	border: 5px solid red;
+    z-index: 10;
+    margin: 0 auto;
+	}
+	.whitebackground
+	{
+		background-color:white;
+	}
+	.whiteborder{
+		border: 5px solid white;
+	}
+	 .form-control:focus {
+        border-color: #ff80ff;
+        box-shadow: 0px 1px 1px orange inset, 0px 0px 8px green;
+    }
+    .affix {
+      top: 20px;
+  }
+  
+  </style>
+
+ 
+  </head>
+<body>
+<!--text-center-->
+<div class="fullwidth text-center" id="header" >
+   <header style=" padding:4px; ">	
+	<h3 style="margin-top:10px; font-weight: 900">
+		Remarkable India 
+	</h3>
+  </header>
+</div>
+
+
+
+<br>
+<div class="container text-right">
+
+<button class="btn btn-success" data-toggle="modal" data-target="#myModal2">SignUp</button>
+</div>
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            
+            <p  id="myModalLabel" >
+              SignUp
+            </p>
+         </div>
+         <div class="modal-body">
+          
+                   
+					
+	<form class="form-horizontal" role="form"  id="signupform">
+		<div >
+                    <div class="col-sm-9 col-sm-offset-3">                    
+                    <div style='font-size:small;color:red' id='msg' class="error">  </div>
+                    </div>
+         </div>
+	
+		  <div class="form-group">
+                    <label class="control-label col-sm-3 text-right" for="inputFname" >Name</label>
+                    <div class="col-sm-9">
+                    <input type="text" id="inputFname" class="form-control" placeholder="Enter your Name"  >                    
+                    </div>
+         </div>
+	    <div class="form-group">
+		<label class="control-label col-sm-3 text-right" for="inputMobNumber" >Mobile</label>
+		<div class="col-sm-9">
+        <input type="tel" id="inputMobNumber" class="form-control" placeholder="Enter your Mobile Number" >
+		</div>
+		</div>
+		
+         <div class="form-group">
+			<label class="control-label col-sm-3 text-right" for="inputPassword">Password</label>
+			<div class="col-sm-9">
+				<input type="password" id="inputPassword" class="form-control" placeholder="Enter your Password" onkeyup='validatePassword()' >
+				 <div style='font-size:small;color:red' id='pwd' class="error"></div>
+			 </div>
+         </div>
+		  <div class="form-group">
+		 <div class="col-sm-9 col-sm-offset-3">
+			<button class="btn btn-lg btn-primary" onclick="setUserValue()" type="button">SignUp</button>
+			
+			
+			 <button type="submit" class=" btn btn-lg btn-default"
+               data-dismiss="modal" aria-hidden="true">
+                  Cancel
+            </button>
+			</div>
+			</div>
+          </form>
+	  </div>
+     </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+  
+</div>
+<br>
+
+<div class="container">
+  <div class="row">
+    <nav class="col-sm-3">
+      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+        <li class="active"><a href="#Home">Home</a></li>
+        <li><a href="#Destinations">Destinations</a></li>
+        <li><a href="#Packages">Packages</a></li>
+      </ul>
+    </nav>
+   
+    <div class="col-sm-9">
+      <div class="row">
+           
+              <h2>Kerala</h2>
+              <img src="shutterstockimages/Kerala.PNG" class="img-responsive img-thumbnail"/>
+              <p>Kerala is situated on the southwestern tip of the Indian mainland on the Arabian Sea. 
+		According to the geographical features, the state can be divided into hills and valleys, 
+		midland plains and coastal belts.In the coastal belts of this state are situated world famous backwaters that are more or less main attraction of Kerala.
+		 </p>
+              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+           </div>
+           
+            <div class="row">
+              <h2>Tamil Nadu</h2>
+              <img src="shutterstockimages/TNn.png"  class="img-responsive img-thumbnail"/>
+              <p>The state boasts of a wide range of topological features. There are chains of mountains, the highest being the Mullayyana Giri (1,925m). Other than the mountains, there are plateaus, residual hills and coastal plains.
+		Located in south India, Tamil Nadu is bounded in the north by Andhra Pradesh and Karnataka, in the south by the Indian Ocean, 
+		in the east by the Bay of Bengal, and by Kerala in the west. </p>
+              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="row">
+              <h2>Sikkim</h2>
+              <img src="shutterstockimages/Sikkim.PNG"  class="img-responsive img-thumbnail"/>
+             <p>Sikkim is bound by Tibet (China) in the north, West Bengal in the south, Tibet and Bhutan in the east and Nepal in the west. The state is spread below Mount Kanchanjunga (8,534 m), 
+				the third highest peak in the world.  The Rangeet and the Teesta are the major river systems of state. These rivers cut through the valleys and in addition there are 180 perennial lakes at different altitudes.
+				</p>
+              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div>
+          
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>	

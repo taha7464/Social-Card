@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css"/> 
+  <style>
+	body{
+		font-family:'Calibri';	
+		background-color: #F6F3F2;
+		font-size:18px;
+		
+	}
+	.gridbordergrey
+	{
+		border: 5px solid #F6F2F2;
+	}
+	#header {
+		height: 50px;
+		background: linear-gradient(to right,  orange, white , green);
+		box-shadow: 0 3px 5px 0 rgba(148,148,148,0.88);
+	 }
+	p{
+		font-size:18px;
+	}
+	.fullwidth
+	{
+		width:100%;	
+	}	
+	#imgGallery
+	{
+	width: 95%;
+    background: #fff;    
+	border: 5px solid red;
+    z-index: 10;
+    margin: 0 auto;
+	}
+	.whitebackground
+	{
+		background-color:white;
+	}
+	.whiteborder{
+		border: 5px solid white;
+	}
+	 .form-control:focus {
+        border-color: #ff80ff;
+        box-shadow: 0px 1px 1px orange inset, 0px 0px 8px green;
+    }
+	 body {
+      position: relative; 
+  }
+  #section1 {padding-top:50px; border-bottom: 1px solid black;}
+  #section2 {padding-top:50px; border-bottom: 1px solid black;}
+  #section3 {padding-top:50px; border-bottom: 1px solid black;}
+  </style>
+ 
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" class="text-center">
+
+
+  
+	 <!--<nav class="navbar navbar-default">-->
+	 <nav class="navbar navbar-inverse navbar-fixed-top">
+	 <!-- <nav class="navbar navbar-fixed-top" style="background: linear-gradient(to right,  orange, white , green); ">-->
+	  <div class="container-fluid ">
+		<div class="navbar-header">
+		  <a class="navbar-brand" href="#">
+		  <strong >Remarkable India</strong></a>
+		</div>
+		<ul class="nav navbar-nav ">
+		  <li><a href="#section1">Home</a></li>
+		  <li><a href="#section2">Destinations</a></li>
+		  <li><a href="#section3">Packages</a></li> 
+		  
+		</ul>
+	  </div>
+	</nav>
+ 
+
+
+<div id="section1" class="container">
+<h1 style=" padding:7px">Home</h1>
+  <img src="shutterstockimages/india.PNG"  />
+  <p style="margin-top:20px; font-weight: 400; text-align:left; padding:7px">
+		The Travel & Tourism Competitiveness Report 2015 ranks India 52nd out of 141
+		 countries overall. The report ranks the price competitiveness of India's tourism
+		 sector 8th out of 141 countries. It mentions that India has quite good air transport
+		 (ranked 35th), particularly given the country’s stage of development, and reasonable 
+		 ground transport infrastructure (ranked 50th). The country also scores high on natural 
+		 and cultural resources (ranked 12th).
+	</p>
+	
+</div>
+<div id="section2" class="container">
+  <h1 class="text-center"  style="padding:7px">Destinations in India</h1>
+		<div class="row">
+			<div class="col-xs-6 text-center whiteborder " style="background-color:#F6F3F2; padding:15px">
+				<div class="row">
+					<div class="col-sm-12">
+						<img src="shutterstockimages/Kerala.PNG" class="img-responsive img-thumbnail"/>
+					</div>
+					<div class="col-sm-12">
+						<h4 class="text-center"><strong>Kerala</strong> Gods own country!</h4>				
+						
+						<p class="text-center">
+							<button class="btn btn-warning btn-xs ">Read more..</button>
+						</p>
+					</div>
+				</div>				
+			</div>
+			<div class="col-xs-6 text-center whiteborder " style="background-color:#F6F3F2;padding:15px">
+				<div class="row">
+					<div class="col-sm-12">
+						<img src="shutterstockimages/TNn.PNG"  class="img-responsive img-thumbnail"/>				
+					</div>
+					<div class="col-sm-12">
+						<h4 class="text-center"><strong>Tamil Nadu</strong> Land of Vedas!	</h4>				
+						<p class="text-center">
+							<button class="btn btn-success btn-xs ">Read more..</button>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6 text-center whiteborder " style="background-color:#F6F3F2;padding:15px">
+				<div class="row">
+					<div class="col-sm-12">
+						<img src="shutterstockimages/Sikkim.PNG" class="img-responsive img-thumbnail"/>
+					</div>
+					<div class="col-sm-12">
+						<h4 class="text-center"><strong>Sikkim</strong> Land of Love!</h4>			
+						
+						<p class="text-center">
+							<button class="btn btn-warning btn-xs ">Read more..</button>
+						</p>
+					</div>
+				</div>				
+			</div>
+			<div class="col-xs-6 text-center whiteborder " style="background-color:#F6F3F2;padding:15px">
+				<div class="row">
+					<div class="col-sm-12">
+						<img src="shutterstockimages/Karnataka.PNG"  class="img-responsive img-thumbnail"/>				
+					</div>
+					<div class="col-sm-12">
+						<h4 class="text-center"><strong>Karnataka</strong> Land of Sandal!</h4>
+				
+						<p class="text-center">
+							<button class="btn btn-success btn-xs ">Read more..</button>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+</div>
+</div>
+<div id="section3" class="container">
+  <h1 style="padding:7px">Packages</h1>
+  <div class="row">
+	<div class="col-sm-6  gridbordergrey whitebackground" style="padding:15px">
+	<h3 class="text-center">Luxury Packages</h3>
+		<img src="shutterstockimages/36723919.jpg" class="img-responsive img-thumbnail" style="padding:15px"/>
+		<br><br>
+		 <button type="button" class="btn btn-info" data-toggle="collapse" 
+		 data-target="#pack1">Package Snapshot</button>
+		<div id="pack1" class="collapse" style="padding:15px">
+			<strong> No. of packages: </strong> 2 <br>
+			<strong> Average cost: </strong> Rs. 1,00,000.00 <br>
+		</div>
+	</div>
+	<div class="col-sm-6  gridbordergrey whitebackground" style="padding:15px">
+	<h3 class="text-center ">Family Packages</h3>
+		<img src="shutterstockimages/356563760.jpg"  class="img-responsive img-thumbnail" style="padding:15px"/>
+		<br><br>
+		<button type="button" class="btn btn-info" data-toggle="collapse" 
+		 data-target="#pack2">Package Snapshot</button>
+		<div id="pack2" class="collapse" style="padding:15px">
+			<strong> No. of packages: </strong> 2 <br>
+			<strong> Average cost: </strong> Rs.40,000.00 <br>
+		</div>
+		</div>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br>
+	</div>
+
+
+
+</body>
+</html>
